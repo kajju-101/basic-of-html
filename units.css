@@ -1,0 +1,61 @@
+    /* =========================
+   BASIC CSS
+========================= 
+viewport: browser jo screen deta hai jaha hamara code disaplay hota hai 
+unit: 2 type of unit.
+    1> absolute unit(fixed value): cm,px,pt(point),mm,in.
+    2> relativ unit(no fixed value):%,vw,vh,rem,em,vmin,vmax.
+      vh,vw,vmin,vmax:depend on viewport.
+      1vw,1vh=5px.
+
+      html ke sabhi element ka size 16px hota (ye kahi mention nahi hota hai ye bydefault value hai).
+      html ke by defalt size per depend hota hai rem. 1rem=16px.
+
+
+      ager html ka font sixe incease kiya to 1rem ki value bhi increase ho jayega.
+
+
+
+      em: ager hamhtml ka font size 100px kiye tohamara 1em = 100px hoga 
+      ager html ka font size 100px hai phir body ka 50px to 1em=50px ho jayega 
+      em ye nearest ancestor size hota hai.
+
+*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #cards {
+        width: 80%;
+        max-width: 400px;
+        height: 50vh;
+        background-color: antiquewhite;
+        font-size: 70px;
+    }
+    
+    #cards h1 {
+        font-size: 1em;
+    }
+    
+    #cards p {
+        font-size: 2rem;
+    }
+    
+    #icon {
+        width: 50%;
+        background-color: white;
+    }
+    
+    #icon i {
+        font-size: 1em;
+    }

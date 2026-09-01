@@ -1,0 +1,49 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-size: 30px;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "left-top top-center top-right" "left-top center rightbottom" "leftbottom leftbottom rightbottom";
+}
+
+#left-top {
+    background-color: pink;
+    grid-area: left-top;
+}
+
+#top-center {
+    background-color: green;
+    grid-area: top-center;
+}
+
+#top-right {
+    background-color: yellow;
+    grid-area: top-right;
+}
+
+#center {
+    background-color: brown;
+    grid-area: center;
+}
+
+#leftbottom {
+    background-color: red;
+    grid-area: leftbottom;
+}
+
+#rightbottom {
+    background-color: orange;
+    grid-area: rightbottom;
+}
